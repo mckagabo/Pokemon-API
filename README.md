@@ -14,6 +14,7 @@ https://documenter.getpostman.com/view/8533723/2s9XxtxaXX
 2. Run `docker-compose up` to download all the required Docker images for this project to run.
 3. Once the setup is complete, the application will be accessible at `http://localhost:8089`.
 4. Confirm that the application is running by accessing the following endpoint: `http://localhost:8089/api/pokemons/hello`.
+5. Follow The api documentation to play with all the endpoints in question
 
 
 
