@@ -15,6 +15,7 @@ https://documenter.getpostman.com/view/8533723/2s9XxtxaXX
 3. Once the setup is complete, the application will be accessible at `http://localhost:8089`.
 4. Confirm that the application is running by accessing the following endpoint: `http://localhost:8089/api/pokemons/hello`.
 5. Follow The api documentation to play with all the endpoints in question
+6. Send me a feedback of what you saw 
 
 
 
