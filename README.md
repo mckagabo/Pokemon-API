@@ -6,7 +6,7 @@ To be able to call all the endpoints here is the link to the api Documentation
 https://documenter.getpostman.com/view/8533723/2s9XxtxaXX
 
 
-## Requirement to be able to run this project
+### Requirement to be able to run this project
 1. You have to have docker installed in your computer
 2. make sure port 8089 is availlable
 
