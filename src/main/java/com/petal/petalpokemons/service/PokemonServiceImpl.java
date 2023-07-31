@@ -25,29 +25,34 @@ public class PokemonServiceImpl implements PokemonService{
     }
 
     @Override
-    public void addPokemon(AddPokemonDto newPokemon) {
+    public Pokemon addPokemon(AddPokemonDto newPokemon) {
+        Pokemon addedPokemon=null;
         try {
            Pokemon transformedPokemon=this.fromAddPokemonDto(newPokemon);
-           pokemonRepo.save(transformedPokemon);
+           addedPokemon= pokemonRepo.save(transformedPokemon);
         }catch (Exception e){
           e.printStackTrace();
         }
+        return addedPokemon;
     }
 
     @Override
-    public void updatePokemon(int id,AddPokemonDto pokemonToUpdate) {
+    public Pokemon updatePokemon(int id,AddPokemonDto pokemonToUpdate) {
+         Pokemon updatedPokemon=null;
         try{
           Pokemon transformedPokemon=this.fromAddPokemonDto(pokemonToUpdate);
           transformedPokemon.setId(id);
-          pokemonRepo.save(transformedPokemon);
+          updatedPokemon=pokemonRepo.save(transformedPokemon);
         }catch (Exception e){
             e.printStackTrace();
         }
+        return updatedPokemon;
     }
 
     @Override
     public void deletePokemon(Pokemon pokemonToDelete) {
-       pokemonRepo.delete(pokemonToDelete);
+         pokemonRepo.delete(pokemonToDelete);
+
     }
 
     @Override

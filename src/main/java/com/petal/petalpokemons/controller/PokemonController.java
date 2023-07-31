@@ -28,7 +28,7 @@ public class PokemonController {
 
    @GetMapping("/hello")
     public ResponseEntity<?> greeting(){
-        return ResponseEntity.ok().body("***** WELCOME TO POKEMON API ******");
+        return ResponseEntity.ok().body("***** WELCOME TO POKEMON API ****** \n POKEMONS ROCK!");
     }
     @PostMapping("/add")
     @ResponseBody
