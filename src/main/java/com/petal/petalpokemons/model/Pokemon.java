@@ -1,8 +1,10 @@
 package com.petal.petalpokemons.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 @Entity(name="pokemons")
+
 public class Pokemon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -134,5 +136,9 @@ public class Pokemon {
 
     public void setSpeeds(int speeds) {
         this.speeds = speeds;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

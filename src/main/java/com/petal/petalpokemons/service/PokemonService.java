@@ -10,8 +10,8 @@ import java.util.Optional;
 public interface PokemonService {
     Page<Pokemon> pokemonList(int pageNo, int pageSize);
 
-    void addPokemon(AddPokemonDto newPokemon);
-    void updatePokemon(int id,AddPokemonDto pokemonToUpdate);
+    Pokemon addPokemon(AddPokemonDto newPokemon);
+    Pokemon updatePokemon(int id,AddPokemonDto pokemonToUpdate);
 
     void deletePokemon(Pokemon pokemonToDelete);
 
